@@ -1,0 +1,21 @@
+<div class="container">
+  <nav class="menu"></nav>
+  <header class="header"></header>
+  <div class="subheader">
+    <app-accordion title="Test">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Incidunt in, doloribus sit autem maxime nemo illo consequatur ipsum quod deleniti doloremque,
+        odio nam nisi molestiae molestias iure necessitatibus harum non!
+      </p>
+    </app-accordion>
+  </div>
+  <section class="body">
+    <div class="box" *ngFor="let boletagem of boletagens$ | async">
+      <p>Identificador do Campo: <span>{{ acompanhamento.identificadorCampo }}</span></p>
+      <p>Descrição do campo: <span>{{ acompanhamento.descricaoCampo }}</span></p>
+      <p>Valor do campo: <span>{{ acompanhamento.valorCampo }}</span></p>
+      <p>TipoCalculado: <span>{{ acompanhamento.tipoCalculado }}</span></p>
+    </div>
+  </section>
+</div>
