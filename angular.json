@@ -28,7 +28,9 @@
               "node_modules/primeng/resources/primeng.min.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "./node_modules/gsap/gsap-core.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -76,7 +78,7 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular-builders/jest:run",
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",

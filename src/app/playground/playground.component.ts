@@ -13,7 +13,7 @@ export class PlaygroundComponent implements OnInit {
   form: FormGroup;
   users$: Observable<any>;
   acompanhamentos$: Observable<Acompanhamento>;
-  boletagens: Observable<any>;
+  boletagens$: Observable<any>;
 
   constructor(
     private fb: FormBuilder,
@@ -22,9 +22,9 @@ export class PlaygroundComponent implements OnInit {
 
   ngOnInit() {
     this.acompanhamentos$ = this.playgroundService.listarAcompanhamentos();
-    this.boletagens = this.playgroundService.listarConsultaBoletagem();
+    this.boletagens$ = this.playgroundService.listarConsultaBoletagem();
 
-    this.boletagens.subscribe(boletagem => console.log(boletagem));
+    this.boletagens$.subscribe(boletagem => console.log(boletagem));
   }
 
   onBoxClick(acompanhamento: Acompanhamento) {
