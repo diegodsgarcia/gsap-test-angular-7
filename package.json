@@ -24,7 +24,7 @@
     "@sinqia/angular2-text-mask": "9.0.6",
     "@sinqia/text-mask-addons": "^3.8.11",
     "core-js": "^2.5.4",
-    "gsap": "^3.0.1",
+    "gsap": "^3.6.0",
     "morphism": "^1.12.1",
     "primeicons": "^1.0.0",
     "primeng": "^7.0.4",
